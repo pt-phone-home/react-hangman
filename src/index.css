@@ -1,0 +1,228 @@
+ * {
+  box-sizing: border-box;
+ }
+
+ body {
+  margin: 0;
+ }
+
+ #root {
+  background-color: rgb(10, 0, 18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+  min-height: 100vh;
+ }
+
+ .nav-container {
+  display: flex;
+  justify-content: center; /* Centers the navigation horizontally */
+  padding: 20px; /* Adds some space around the navigation */
+}
+
+.nav-list {
+  list-style-type: none; /* Removes bullet points from the list */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Aligns the list items in a row */
+  gap: 20px; /* Adds a gap between each list item */
+}
+
+.nav-item a {
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Sets text color */
+  background-color: #007BFF; /* Sets background color */
+  padding: 10px 20px; /* Adds padding around the text */
+  border-radius: 5px; /* Rounds the corners of the link/button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-item a:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.nav-item .play-game {
+  background-color: green;
+}
+
+.nav-item .play-game:hover {
+  background-color: rgb(1, 103, 1);
+}
+
+ .header {
+ text-align: center;
+ }
+
+ .description {
+  font-size: 22px;
+  text-align: center;
+ }
+
+ .status-section {
+  justify-self: center;
+  width: 400px;
+  height: 70px;
+  /* margin-bottom: 40px; */
+ }
+
+ .status-height {
+  height: 70px;
+ }
+
+ .status {
+  width: 400px;
+  justify-self: center;
+  background-color: transparent;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+ }
+
+ .won {
+  background-color: green;
+ }
+
+ .loose {
+  background-color: red;
+ }
+
+ .farewell {
+  background-color:  rgb(52, 2, 93);
+ }
+
+ .status > h4 {
+  
+ }
+
+ .status > p {
+ 
+ }
+
+ .chips-wrapper {
+  margin-top: 15px;
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-self: center;
+ }
+
+ .chip {
+  position: relative;
+ }
+
+ .chip.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+ .letters-element {
+  max-width: 600px;  
+ }
+
+ .letters-element .letter {
+  background-color: rgb(40, 40, 40);
+  width: 50px;
+  height: 50px;
+  border-bottom: 1px solid white;
+  text-align: center;
+ }
+
+ .letter.missed {
+  color: red;
+ }
+
+ .keyboard-container {
+  margin: 20px 0px;
+  max-width: 500px;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  justify-self: center;
+  font-size: 40px;
+ }
+.key {
+  cursor: pointer;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: rgb(192, 180, 88);
+}
+
+.key:active {
+  transform: scale(.98);
+}
+
+.key:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.new-game-button {
+  padding: 10px 15px;
+  width: 200px;
+  background-color: aqua;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+section.settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.settings-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.words-form-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.words-form-container form {
+  width: 100%;
+}
+
+.form-row {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-row input{
+  width: 50%;
+  margin-right: 5px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.form-row button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}

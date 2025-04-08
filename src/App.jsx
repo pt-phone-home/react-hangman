@@ -112,6 +112,9 @@ function App() {
     setGuessedLetters((prev) => {
       return [];
     })
+    isGameOver = false;
+    isGameLost = false;
+    isGameWon = false;
   }
 
   function addWords(formData) {

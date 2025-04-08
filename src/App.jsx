@@ -105,6 +105,10 @@ function App() {
   }
 
   function resetGame() {
+    isGameOver = false;
+    isGameLost = false;
+    isGameWon = false;
+    setChipMessage(null)
     setCurrentWord((prev) => {
       return getRandomWord();
     })
@@ -112,11 +116,9 @@ function App() {
     setGuessedLetters((prev) => {
       return [];
     })
-    isGameOver = false;
-    isGameLost = false;
-    isGameWon = false;
+    
 
-    setChipMessage(null)
+   
   }
 
   function addWords(formData) {

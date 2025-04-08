@@ -115,6 +115,10 @@ function App() {
     isGameOver = false;
     isGameLost = false;
     isGameWon = false;
+
+    setChipMessage((prev) => {
+      return null;
+    })
   }
 
   function addWords(formData) {
